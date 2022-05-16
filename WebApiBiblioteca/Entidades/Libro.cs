@@ -5,7 +5,7 @@ namespace WebApiBiblioteca.Entidades
     public class Libro
     {
         public int LibroId { get; set; }
-
+        [Required]
         [StringLength(50)]
         public string Nombre { get; set; }
         [Range(1,10000)]
